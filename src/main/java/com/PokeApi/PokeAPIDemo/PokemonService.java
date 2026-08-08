@@ -18,15 +18,15 @@ public class PokemonService {
     private final ConcurrentHashMap<String, MovimientosDTO> cacheMovimientos = new ConcurrentHashMap<>();
 
     private static final java.util.Map<String, String> tiposEsp = java.util.Map.ofEntries(
-            java.util.Map.entry("normal", "Normal"), java.util.Map.entry("fighting", "Lucha"),
+            java.util.Map.entry("normal", "Normal"), java.util.Map.entry("fighting", "Pelea"),
             java.util.Map.entry("flying", "Volador"), java.util.Map.entry("poison", "Veneno"),
             java.util.Map.entry("ground", "Tierra"), java.util.Map.entry("rock", "Roca"),
-            java.util.Map.entry("bug", "Bicho"), java.util.Map.entry("ghost", "Fantasma"),
+            java.util.Map.entry("bug", "Insecto"), java.util.Map.entry("ghost", "Fantasma"),
             java.util.Map.entry("steel", "Acero"), java.util.Map.entry("fire", "Fuego"),
             java.util.Map.entry("water", "Agua"), java.util.Map.entry("grass", "Planta"),
             java.util.Map.entry("electric", "Eléctrico"), java.util.Map.entry("psychic", "Psíquico"),
             java.util.Map.entry("ice", "Hielo"), java.util.Map.entry("dragon", "Dragón"),
-            java.util.Map.entry("dark", "Siniestro"), java.util.Map.entry("fairy", "Hada")
+            java.util.Map.entry("dark", "Oscuridad"), java.util.Map.entry("fairy", "Hada")
     );
 
     private static final java.util.Map<String, String> clasesEsp = java.util.Map.of(
