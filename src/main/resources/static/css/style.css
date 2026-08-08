@@ -1,0 +1,171 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.contenedor-principal {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.tarjeta {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    padding: 30px;
+    text-align: center;
+    width: 300px;
+    transition: transform 0.3s;
+}
+
+.tarjeta:hover {
+    transform: translateY(-5px);
+}
+
+h1 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.nombre {
+    font-size: 28px;
+    font-weight: bold;
+    color: #e3350d;
+    text-transform: capitalize;
+    margin: 15px 0;
+    min-height: 35px;
+}
+
+img {
+    width: 150px;
+    height: 150px;
+    background-color: #f8f9fa;
+    border-radius: 50%;
+    border: 3px solid #e3350d;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: cover;
+}
+
+button {
+    background-color: #3b4cca;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.2s;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #2a3a9c;
+}
+
+.cargando {
+    color: #666;
+    font-style: italic;
+}
+
+.stats-totales {
+    background-color: #f8f9fa;
+    border: 2px solid #e9ecef;
+    border-radius: 8px;
+    padding: 8px;
+    margin: 10px 0;
+    font-size: 16px;
+    font-weight: bold;
+    color: #555;
+}
+
+.stats-totales span {
+    color: #3b4cca;
+    font-size: 20px;
+    margin-left: 5px;
+}
+
+.movimientos-contenedor {
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px dashed #ccc;
+}
+
+.movimientos-contenedor h3 {
+    font-size: 14px;
+    color: #666;
+    margin: 0 0 10px 0;
+}
+
+/* LA MAGIA DE LA GRILLA 2x2 */
+.lista-movimientos {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Dos columnas exactamente iguales */
+    gap: 8px; /* Espacio entre los 4 recuadros */
+    min-height: 120px;
+}
+
+.lista-movimientos li {
+    background-color: #fff9e6;
+    border: 2px solid #ffe066;
+    color: #333;
+    border-radius: 8px;
+    padding: 8px 4px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    width: 100%;
+}
+
+.mov-titulo {
+    font-size: 13px; /* Un poquito más chico para que entre en la caja */
+    font-weight: bold;
+    color: #e3350d;
+    text-transform: capitalize;
+}
+
+.mov-detalles {
+    font-size: 11px;
+    color: #666;
+    text-transform: capitalize;
+}
+
+/* Contenedor flexible por si la pantallita es muy chica */
+.stats-ataque-contenedor {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Si las pastillas no entran lado a lado, se apilan suavemente */
+    gap: 4px;
+    margin-top: 4px;
+    width: 100%;
+}
+
+/* Pastillitas grises ajustadas para la grilla */
+.mov-stat {
+    background-color: #e9ecef;
+    border-radius: 8px;
+    padding: 2px 5px;
+    font-size: 10px;
+    font-weight: bold;
+    color: #333;
+}

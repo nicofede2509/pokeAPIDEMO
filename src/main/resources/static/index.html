@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador de Pokémon Aleatorio</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="contenedor-principal">
+    <!-- Tarjeta del Jugador 1 -->
+    <div class="tarjeta">
+        <h1>Pokémon 1</h1>
+        <img id="imagen-pokemon-1" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/poke-ball.png" alt="Pokeball">
+        <div id="nombre-pokemon-1" class="nombre">???</div>
+
+        <div class="stats-totales">Total Stats: <span id="total-pokemon-1">-</span></div>
+
+        <div class="movimientos-contenedor">
+            <h3>Movimientos:</h3>
+            <ul id="movimientos-pokemon-1" class="lista-movimientos">
+                <li>-</li>
+            </ul>
+        </div>
+
+        <button id="btn-generar-1">Generar Aleatorio</button>
+    </div>
+
+    <!-- Tarjeta del Jugador 2 -->
+    <div class="tarjeta">
+        <h1>Pokémon 2</h1>
+        <img id="imagen-pokemon-2" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/poke-ball.png" alt="Pokeball">
+        <div id="nombre-pokemon-2" class="nombre">???</div>
+
+        <div class="stats-totales">Total Stats: <span id="total-pokemon-2">-</span></div>
+
+        <div class="movimientos-contenedor">
+            <h3>Movimientos:</h3>
+            <ul id="movimientos-pokemon-2" class="lista-movimientos">
+                <li>-</li>
+            </ul>
+        </div>
+
+        <button id="btn-generar-2">Generar Aleatorio</button>
+    </div>
+</div>
+
+<!-- Le sumamos un ?v=4 para forzar al navegador a borrar la caché del JS -->
+<script src="js/app.js?v=5"></script>
+</body>
+</html>
